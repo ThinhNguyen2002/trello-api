@@ -8,5 +8,5 @@ export const HttpStatusCode = {
 
 export const WHILELIST_DOMAINS = [
     'http://localhost:3000',
-    'http://localhost:3001',
+    'https://trello-thinhnguyendev-web.web.app'
 ]
