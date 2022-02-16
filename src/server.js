@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import { corsOptions } from '*/config/cors'
-import { env } from '*/config/environtment'
+// import { env } from '*/config/environtment'
 import { connectDB } from '*/config/mongodb'
 import { apiV1 } from '*/routers/v1'
 
@@ -25,9 +25,16 @@ const bootServer = () => {
     /* Use APIs  */
     app.use('/v1', apiV1)
 
-    app.listen(env.APP_POST, env.APP_HOST, () => {
+    // app.listen(env.APP_POST, env.APP_HOST, () => {
+    //     console.log(
+    //         `Hello MERN stack, app listening on ${env.APP_HOST}:${env.APP_POST}`
+    //     )
+    // })
+
+    //Support heroku deploy
+    app.listen(process.env.PORT, () => {
         console.log(
-            `Hello MERN stack, app listening on ${env.APP_HOST}:${env.APP_POST}`
+            `Hello MERN stack, app listening at port: ${envprocess.env.PORT}`
         )
     })
 }
