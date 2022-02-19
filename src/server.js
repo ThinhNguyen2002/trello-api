@@ -34,7 +34,7 @@ const bootServer = () => {
     //Support heroku deploy
     app.listen(process.env.PORT, () => {
         console.log(
-            `Hello MERN stack, app listening at port: ${envprocess.env.PORT}`
+            `Hello MERN stack, app listening at port: ${process.env.PORT}`
         )
     })
 }
