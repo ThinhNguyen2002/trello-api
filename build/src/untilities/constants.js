@@ -12,5 +12,5 @@ var HttpStatusCode = {
   INTERNAL_SERVER: 500
 };
 exports.HttpStatusCode = HttpStatusCode;
-var WHILELIST_DOMAINS = ['http://localhost:3000', 'https://trello-thinhnguyendev-web.web.app'];
+var WHILELIST_DOMAINS = ['http://localhost:3000', 'https://trello-thinhnguyendev-web.web.app', 'http://localhost:4200'];
 exports.WHILELIST_DOMAINS = WHILELIST_DOMAINS;
